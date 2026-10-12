@@ -1,0 +1,17 @@
+# Mescle no pubspec.yaml do seu projeto (não substitua o arquivo inteiro).
+# Versões: prefira `flutter pub add intl flutter_slidable google_fonts`
+# e `flutter pub add dev:flutter_launcher_icons` para obter as compatíveis.
+
+dependencies:
+  intl: ^0.20.2
+  flutter_slidable: ^4.0.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
