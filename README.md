@@ -15,7 +15,7 @@ Academia (capacidade máxima: 30 pessoas).
 
 ## Vídeo de demonstração
 
-\ https://youtu.be/0D_XKQYdqNo?is=VSNVRxjpZppvOe1G
+https://youtu.be/0D_XKQYdqNo?is=VSNVRxjpZppvOe1G
 
 ## Como executar
 
