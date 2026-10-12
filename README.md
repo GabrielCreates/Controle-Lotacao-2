@@ -2,44 +2,83 @@
 
 ## Descrição
 
-Aplicativo Flutter que evolui o Controle de Lotação do Checkpoint 01: cadastra pessoas, controla entrada e saída e respeita a capacidade máxima.
+Aplicativo desenvolvido em Flutter para gerenciar o acesso de pessoas a um ambiente, registrando entradas e saídas e acompanhando a ocupação em relação à capacidade máxima.
 
 ## Ambiente escolhido
 
-Academia (capacidade máxima: 30 pessoas).
+**Academia**, com capacidade máxima de **30 pessoas**.
 
 ## Integrantes
 
-* \- Gabriel Rocha de Souza — RM567023
-* \- Murilo Marques Cabral — RM568224
+- Gabriel Rocha de Souza — RM567023
+- Murilo Marques Cabral — RM568224
 
 ## Vídeo de demonstração
 
-https://youtu.be/0D_XKQYdqNo?is=VSNVRxjpZppvOe1G
+[Assistir à demonstração do aplicativo no YouTube](https://youtu.be/0D_XKQYdqNo?is=VSNVRxjpZppvOe1G)
+
+## Tecnologias e pacotes
+
+- Flutter e Dart
+- `intl` — formatação de datas e horários
+- `flutter_slidable` — ações nos itens da lista
+- `google_fonts` — tipografia
+- `flutter_launcher_icons` — configuração do ícone do aplicativo
 
 ## Como executar
 
-1. Crie o projeto (`flutter create .`) ou use o seu e copie `lib/` e `assets/` para ele.
-2. Mescle `pubspec\_trecho.yaml` no `pubspec.yaml` (ou use `flutter pub add`).
-3. Execute:
+### Pré-requisitos
 
-```bash
-flutter pub get
-dart run flutter\_launcher\_icons
-flutter run
+- Flutter SDK instalado e configurado no PATH.
+- Android Studio, emulador Android ou dispositivo compatível, ou outro destino suportado pelo Flutter.
+
+### Passos
+
+1. Clone este repositório e entre na pasta do projeto:
+
+   ```bash
+   git clone https://github.com/GabrielCreates/Controle-Lotacao-2.git
+   cd Controle-Lotacao-2
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. Opcionalmente, gere os ícones do aplicativo:
+
+   ```bash
+   dart run flutter_launcher_icons
+   ```
+
+4. Inicie o aplicativo em um dispositivo ou emulador conectado:
+
+   ```bash
+   flutter run
+   ```
+
+5. Para executar os testes automatizados:
+
+   ```bash
+   flutter test
+   ```
+
+## Estrutura do projeto
+
+```text
+lib/
+├── main.dart
+├── models/
+│   └── pessoa.dart
+├── screens/
+│   └── home_page.dart
+├── theme/
+│   └── app_colors.dart
+└── widgets/
+    └── pessoa_item.dart
+
+test/
+└── widget_test.dart
 ```
-
-## Tecnologias/pacotes
-
-Flutter/Dart, intl, flutter\_slidable, google\_fonts, flutter\_launcher\_icons.
-
-## Estrutura
-
-```
-lib/main.dart
-lib/models/pessoa.dart
-lib/screens/home\_page.dart
-lib/widgets/pessoa\_item.dart
-lib/theme/app\_colors.dart
-```
-
